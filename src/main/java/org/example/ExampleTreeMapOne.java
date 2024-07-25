@@ -14,6 +14,12 @@ public class ExampleTreeMapOne {
 		// remove method with single parameter
 		int value = numbers.remove("Two");
 		System.out.println("Removed value: " + value);
+		System.out.println("TreeMap: "+ numbers);
+
+		// remove method with two parameters
+		boolean result = numbers.remove("Three", 3);
+		System.out.println("Is the entry {Three=3} removed? " + result);
+		System.out.println("Updated TreeMap: " + numbers);
 
 	}
 }
